@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="com.new1.Employee" table="EMPLOYEES">
+<id name="employeeId" type="int" column="EMPLOYEE_ID">
+<generator class="increment"/>
+</id>
+<property name="firstName" column="EMPLOYEE_FIRSTNAME" type="string" length="50"/>
+<property name="lastName" column="EMPLOYEE_LASTNAME" type="string" length="50"/>
+<property name="salary" column="EMPLOYEE_SALARY" type="int" length="50"/>
+</class>
+</hibernate-mapping>
